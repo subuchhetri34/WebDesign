@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Coaching Sesson Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Coaching Session Survey Form</h1>
+       <p id="description">Please take a few minutes to fill out when conducting an observation</p>
+    
+<fieldset>
+    <form id="survey-form">
+    <label for="name" id="name-label">Name
+      <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </label>
+    <label for="email" id="email-label">Email
+      <input name="email" id="email" type="email" placeholder="Enter your email" required>
+    </label>
+    <label for="number" id="number-label" >Age<small>(optional)
+      <input id="number" name="age" type="number" min="12" max="120" placeholder="Enter your age" required>
+    </label>
+</fieldset>
+<hr>
+<br>
+<br>
+    <label for="dropdown" id="survey-form">
+      Which option best describe your current role?</br>
+      <select id="dropdown" name="survey-form">
+        <option value="">(select one)</option>
+        <option value="1">Student</option>
+        <option value="2">Full time job</option>
+        <option value="3">Full time learner</option>
+        <option value="4">Coach</option>
+        <option value="4">Other</option>
+      </select></br>
+     </label>
+What is your favorite coaching session?</br>
+     <label for="fav-session">
+      
+      <select id="fav-session" name="fav-session">
+        <option value="">(select one)</option>
+        <option value="1">Public Speaking</option>
+        <option value="2">Brain Storming</option>
+        <option value="3">Projects</option>
+        <option value="4">Discussion session</option>
+        <option value="5">Challenges</option>
+<option value="6">Others</option>
+      </select>
+     </label>
+
+     <legend>Would you recommend our session to your friend?</legend>
+   <label for="yes" id="survey-form">   <input id="yes" name="recommend" type="radio" value="Yes" checked class="inline">Yes
+     </label>
+    <label for="no" id="survey-form"><input id="no" name="recommend" type="radio" value="No" class="inline">No</label>
+    <label for="not sure" survey-form><input id="not sure" name="recommend" type="radio" class="inline" value="Not Sure">Not sure</label>
+
+    <fieldset id="survey-form">
+      <legend>What would you like to see improved? <small>(Check all that apply)</legend>
+   <label for="project"><input name="project" id="project" type="checkbox" class="inline" value="Projects">Projects</label>
+   <label for="note"><input name="note" id="note" type="checkbox" class="inline" value="Note taking">Note taking
+   </label>
+      <label for ="technology"><input class="inline" name="technology id="technology" type="checkbox" value="Technology">Technology</label>
+      <label for="videos"><input class="inline" name="videos" id="videos" type="checkbox" value="Reference videos">Reference videos</label>
+      <label for="classroom"><input class="inline" id="classroom" name="classroom" type="checkbox" value="Classroom Environment">Classroom Environment</label>
+      <label for="discussion"><input class="inline" id="discussion" name="discussion" type="checkbox" value="Reflective Discussion">Reflective Discussion</label>
+      <label for="courses"><input class="inline" id="courses" name="courses" type="checkbox" value="Additional Courses">Additional Courses</label>
+    </fieldset>
+     <label for="comments" id="survey-form">Any suggestions?
+        <textarea id="comments" name="comments" placeholder="type here..." rows="3"></textarea></label>
+   <label id="survey-form"> <input id="submit" type="submit" value="Submit"></label>
+    </form>
+  </body>
+  <footer>
+    <p>Thank you for taking the time to help us improve the platform !</p>
+  </footer>
+</html>
